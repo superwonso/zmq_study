@@ -1,2 +1,2 @@
-# zmq_study
+# ZeroMQ Tutorial in C
  
