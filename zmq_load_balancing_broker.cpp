@@ -1,8 +1,7 @@
 #include <iostream>
 #include "zhelpers.hpp"
-#include <pthread.h>
-static void *
-worker_thread(void *arg) {
+#include "zmq.hpp"
+static void *worker_thread(void *arg) {
     zmq::context_t context(1);
     zmq::socket_t worker(context, ZMQ_REQ);
 
@@ -60,7 +59,7 @@ int main() {
         s_recv(broker);     //  Response from worker       
         
         s_sendmore(broker, identity);
-        s_sendmore(broker, "");
+        //s_sendmore(broker, " ");
         //  Encourage workers until it's time to fire them
         if (s_clock() < end_time)
             s_send(broker, "Work harder");

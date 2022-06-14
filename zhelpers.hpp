@@ -1,10 +1,8 @@
+#define _XOPEN_SOURCE 700 // For Using struct sigaction 
 #ifndef __ZHELPERS_HPP_INCLUDED__
 #define __ZHELPERS_HPP_INCLUDED__
-
 //  Include a bunch of headers that we will need in the examples
-
-#include <zmq.hpp> // https://github.com/zeromq/cppzmq
-
+#include "zmq.hpp"
 #include <iostream>
 #include <iomanip>
 #include <string>
@@ -16,15 +14,16 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <signal.h>
-#if (!defined(WIN32))
-#   include <sys/time.h>
-#   include <unistd.h>
-#endif
+#include <sys/time.h>
+#include <unistd.h>
+#include <minwinbase.h> // To Use FILETIME structure
+#include <sysinfoapi.h> // To Use GetSystemTimeAsFileTime()
 
 //  Bring Windows MSVC up to C99 scratch
     typedef unsigned long ulong;
     typedef unsigned int  uint;
     typedef __int64 int64_t;
+    //typedef int64_t FILETIME; // For GNU++20
 
 //  On some version of Windows, POSIX subsystem is not installed by default.
 //  So define srandom and random ourself.
@@ -112,8 +111,9 @@ inline static bool s_recv(zmq::socket_t & socket, std::string & ostring, int fla
 
 //  Convert C string to 0MQ string and send to socket
 inline static int
-s_send(void *socket, const char *string, int flags = 0) {
-	int rc;
+s_send(void *socket, const char *string, int flags) {
+	flags=0; 
+    int rc;
 	zmq_msg_t message;
 	zmq_msg_init_size(&message, strlen(string));
 	memcpy(zmq_msg_data(&message), string, strlen(string));
@@ -141,8 +141,8 @@ s_sendmore(void *socket, char *string) {
 	zmq_msg_t message;
 	zmq_msg_init_size(&message, strlen(string));
 	memcpy(zmq_msg_data(&message), string, strlen(string));
-	//rc = zmq_send(socket, string, strlen(string), ZMQ_SNDMORE);
-	rc = zmq_msg_send(&message, socket, ZMQ_SNDMORE);
+	rc = zmq_send(socket, string, strlen(string), ZMQ_SNDMORE);
+	//rc = zmq_msg_send(&message, socket, ZMQ_SNDMORE);
 	assert(-1 != rc);
 	zmq_msg_close(&message);
 	return (rc);
@@ -279,7 +279,7 @@ inline static void
 s_sleep (int msecs)
 {
 #if (defined (WIN32))
-    Sleep (msecs);
+    _sleep(msecs);
 #else
     struct timespec t;
     t.tv_sec = msecs / 1000;
@@ -318,18 +318,16 @@ inline static void s_signal_handler (int signal_value)
     s_interrupted = 1;
 }
 
-/*inline static void s_catch_signals ()
+inline static void s_catch_signals ()
 {
 #if (!defined(WIN32))
-    struct sigaction {}action;
+    struct sigaction action;
     action.sa_handler = s_signal_handler;
     action.sa_flags = 0;
     sigemptyset (&action.sa_mask);
     sigaction (SIGINT, &action, NULL);
     sigaction (SIGTERM, &action, NULL);
 #endif
-}*/
-
-
+}
 
 #endif
