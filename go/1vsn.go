@@ -9,10 +9,11 @@ import (
 )
 
 func main() {
-	Publisher, _ := zmq4.NewSocket(zmq4.PUB)
-	defer Publisher.Close()
-	Publisher.Bind("tcp://*:5556")
-	Publisher.Bind("ipc://weather.ipc")
+	publisher, _ := zmq4.NewSocket(zmq4.Type(zmq4.PUB))
+	defer publisher.Close()
+
+	publisher.Bind("tcp://*:5556")
+	publisher.Bind("ipc://weather.ipc")
 
 	// Seed the random number generator
 	rand.Seed(time.Now().UnixNano())
@@ -28,6 +29,6 @@ func main() {
 		msg := fmt.Sprintf("%d %d %d", zipcode, temperature, relhumidity)
 
 		//  Send message to all subscribers
-		Publisher.Send(msg, 0)
+		publisher.Send(msg, 0)
 	}
 }
