@@ -19,16 +19,11 @@ while True:
     # Targeting file to send to receiver
     destfile = path + '/' + filename
     # Connect to sender and receive file
-    print('!')
     context = zmq.Context()
-    print('a')
     subscriber = context.socket(zmq.SUB)
-    print('b')
     subscriber.connect("tcp://localhost:5557")
-    print('c')
     subscriber.setsockopt(zmq.SUBSCRIBE,b'')
     msg = subscriber.recv()
-    print('@')
     if msg:
         f = open(destfile, 'wb')
         print ('open')
@@ -36,8 +31,6 @@ while True:
         print ('close\n')
         f.close()
     # Check if file exists
-    
-    print('#')
     if os.path.isfile(destfile):
         transfer_status = 'success'
         time.sleep(2)
@@ -45,7 +38,6 @@ while True:
         transfer_status = 'fail'
         time.sleep(2)
     # If file exists, send it to receiver and logging to "transfer.log"
-    print('$')
     if transfer_status == 'success':
         context = zmq.Context()
         publisher = context.socket(zmq.PUB)
