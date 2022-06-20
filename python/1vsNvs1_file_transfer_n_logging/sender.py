@@ -27,7 +27,7 @@ while True:
     time.sleep(1)
 # Declare Var for file dir and file name
     path = 'C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/from'
-    filename = 'testfile2.hwp'
+    filename = 'testfile.txt'
     curFile = path + '/' + filename
     print('File Name : ', curFile)
     size = os.stat(curFile).st_size

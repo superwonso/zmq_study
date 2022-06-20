@@ -23,7 +23,7 @@ while True:
     i+=1
     # Get file from sender and save it to temp folder
     path = 'C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr'
-    filename = 'testfile2.hwp'
+    filename = 'testfile.txt'
     # Targeting file to send to receiver
     destfile = path + '/' + filename
     # Connect to sender and receive file

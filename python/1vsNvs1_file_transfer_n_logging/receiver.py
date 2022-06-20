@@ -21,7 +21,7 @@ while True:
     i+=1
 # Targeting dir for receive file
     path = 'C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/to'
-    filename = 'testfile2.hwp'
+    filename = 'testfile.txt'
     destfile = path + '/' + filename
 # Connect to broker and receive file
     context = zmq.Context()
