@@ -32,3 +32,4 @@
 2022-06-20 19:10:49.720665 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Get file from Sender, success
 2022-06-20 19:10:52.736010 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Send file to Receiver, success
 2022-06-20 19:11:00.749584 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Get file from Sender, success
+2022-06-20 19:11:03.767158 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Send file to Receiver, success
