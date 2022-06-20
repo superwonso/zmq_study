@@ -1,20 +1,7 @@
 import zmq
 import time
-import datetime
-import hashlib
 
 i=1
-
-def logging(transfer_status):
-    with open('transfer.log', 'a') as l:
-        log_message = str(datetime.datetime.now()) + ' ' + str(transfer_status) + '\n'
-        l.write(log_message)
-
-def calc_file_hash(path):
-    f = open(path, 'rb')
-    data = f.read()
-    hash = hashlib.md5(data).hexdigest()
-    return hash
 
 while True:
     print(i)
@@ -35,8 +22,4 @@ while True:
         file.write(msg)
         print('close\n')
         file.close()
-        hash_val = calc_file_hash(destfile)
-        logging('Receiver :'+ ' ' + 'file :' + ' ' + str(filename)+ ' ' + 'md5 Checksum :' + ' ' + str(hash_val) + ' ' + 'Get file from broker, success')
-    else :
-        logging('Receiver :'+ ' ' + 'file :' + ' ' + str(filename)+ ' ' + str(hash_val) + ' ' + 'Get file from broker, fail')
     time.sleep(5)

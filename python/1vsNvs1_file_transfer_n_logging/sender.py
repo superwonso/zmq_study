@@ -1,21 +1,8 @@
 import zmq
 import time
 import os
-import datetime
-import hashlib
 
 i=1
-
-def logging(transfer_status):
-    with open('transfer.log', 'a') as l:
-        log_message = str(datetime.datetime.now()) + ' ' + str(transfer_status) + '\n'
-        l.write(log_message)
-
-def calc_file_hash(path):
-    f = open(path, 'rb')
-    data = f.read()
-    hash = hashlib.md5(data).hexdigest()
-    return hash
 
 while True:
     print(i)
@@ -37,8 +24,6 @@ while True:
     file = target.read(size)
     if file:
         publisher.send(file)
-    hash_val = calc_file_hash(curFile)
-    logging('Sender :'+ ' ' + 'file :' + ' ' + str(filename)+ ' ' + 'md5 Checksum :' + ' ' + str(hash_val) + ' ' + 'Send file to broker, success')
     file = target.close()
 # Take a break for re-send file
     time.sleep(1)
