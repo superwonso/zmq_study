@@ -52,7 +52,9 @@ Mkfile.old
 dkms.conf
 
 # Test File
-testfile.txt
+python/1vsNvs1_file_transfer_n_logging/from/testfile.*
+python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.*
+python/1vsNvs1_file_transfer_n_logging/to/testfile.*
 
 # Log file
-transfer.log
+python/1vsNvs1_file_transfer_n_logging/transfer.log
