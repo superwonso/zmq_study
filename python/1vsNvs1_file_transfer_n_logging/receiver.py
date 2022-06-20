@@ -17,9 +17,9 @@ while True:
     subscriber.setsockopt(zmq.SUBSCRIBE,b'')
     msg = subscriber.recv()
     if msg:
-        f = open(destfile, 'wb')
+        file = open(destfile, 'wb')
         print('open')
-        f.write(msg)
+        file.write(msg)
         print('close\n')
-        f.close()
+        file.close()
     time.sleep(5)

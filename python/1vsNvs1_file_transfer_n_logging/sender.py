@@ -17,9 +17,10 @@ while True:
     size = os.stat(curFile).st_size
     print('File size:',size)
 # Targeting file
-    target = open(curFile, 'wb')
+    target = open(curFile, 'rb')
     file = target.read(size)
     if file:
         publisher.send(file)
+    file = target.close()
 # Take a break for re-send file
     time.sleep(10)

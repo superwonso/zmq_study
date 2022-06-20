@@ -49,6 +49,8 @@ while True:
         if file:
             publisher.send(file)
         logging('file'+' '+str(destfile)+' '+'Send to Receiver, success')
+        file=target.close()
+        os.remove(destfile)
     # If file doesn't exist, logging to "transfer.log"
     elif transfer_status == 'fail':
         logging('file'+' '+str(destfile)+' '+'Send to Receiver, fail')
