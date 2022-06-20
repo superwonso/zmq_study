@@ -1,41 +1,34 @@
-2022-06-17 15:41:00.424867 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, fail
-2022-06-17 15:43:12.478743 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, fail
-2022-06-17 15:52:41.446409 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, fail
-2022-06-17 15:59:38.455468 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, fail
-2022-06-17 16:01:41.898829 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-17 16:02:23.751825 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-17 16:02:26.785311 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-17 16:02:29.808585 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-17 16:02:32.847942 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-17 16:02:35.878017 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-17 16:02:38.907279 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-17 16:02:41.944621 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-17 16:02:44.975516 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-17 16:02:47.996024 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-17 16:02:51.022145 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-17 16:49:54.774448 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-17 16:50:05.801387 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-17 16:50:16.812464 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-17 16:50:27.828491 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-17 16:50:38.854844 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-17 16:50:49.869353 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-17 16:51:00.906919 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-17 16:51:11.918583 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-17 16:51:22.948867 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-17 16:51:33.976499 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-17 16:51:45.006529 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-17 16:52:29.090136 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-17 16:52:40.113072 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-17 16:52:51.156457 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-20 18:38:11.711363 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-20 18:41:18.123791 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-20 18:42:03.783919 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-20 18:43:20.935448 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-20 18:43:42.965574 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-20 18:44:05.025391 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-20 18:44:16.059130 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-20 18:44:27.075233 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-20 18:44:38.097502 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-20 18:45:06.875395 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-20 18:45:18.115489 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
-2022-06-20 18:45:28.639697 file C:/Users/user/Desktop/Dev/GitHub/zmq_study/python/1vsNvs1_file_transfer_n_logging/tmpr/testfile.txt Send to Receiver, success
+
+2022-06-20 19:08:04.384682 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Get file from Sender, success
+2022-06-20 19:08:07.400626 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Send file to Receiver, success
+2022-06-20 19:08:15.404541 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Get file from Sender, success
+2022-06-20 19:08:18.420698 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Send file to Receiver, success
+2022-06-20 19:08:26.420608 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Get file from Sender, success
+2022-06-20 19:08:29.442071 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Send file to Receiver, success
+2022-06-20 19:08:37.445178 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Get file from Sender, success
+2022-06-20 19:08:40.475358 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Send file to Receiver, success
+2022-06-20 19:08:48.475491 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Get file from Sender, success
+2022-06-20 19:08:51.507696 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Send file to Receiver, success
+2022-06-20 19:08:59.498638 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Get file from Sender, success
+2022-06-20 19:09:02.517371 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Send file to Receiver, success
+2022-06-20 19:09:10.529163 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Get file from Sender, success
+2022-06-20 19:09:13.549759 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Send file to Receiver, success
+2022-06-20 19:09:21.557891 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Get file from Sender, success
+2022-06-20 19:09:24.569843 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Send file to Receiver, success
+2022-06-20 19:09:32.571673 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Get file from Sender, success
+2022-06-20 19:09:35.592284 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Send file to Receiver, success
+2022-06-20 19:09:43.597222 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Get file from Sender, success
+2022-06-20 19:09:46.620246 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Send file to Receiver, success
+2022-06-20 19:09:54.611334 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Get file from Sender, success
+2022-06-20 19:09:57.633124 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Send file to Receiver, success
+2022-06-20 19:10:05.633651 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Get file from Sender, success
+2022-06-20 19:10:08.656155 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Send file to Receiver, success
+2022-06-20 19:10:16.654470 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Get file from Sender, success
+2022-06-20 19:10:19.683030 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Send file to Receiver, success
+2022-06-20 19:10:27.672306 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Get file from Sender, success
+2022-06-20 19:10:30.691984 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Send file to Receiver, success
+2022-06-20 19:10:38.699292 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Get file from Sender, success
+2022-06-20 19:10:41.720544 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Send file to Receiver, success
+2022-06-20 19:10:49.720665 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Get file from Sender, success
+2022-06-20 19:10:52.736010 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Send file to Receiver, success
+2022-06-20 19:11:00.749584 file : testfile.txt md5 Checksum : 735da9b60cf57c4c387e150d89cd0ab6 Get file from Sender, success

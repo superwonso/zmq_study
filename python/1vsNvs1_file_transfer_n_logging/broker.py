@@ -2,8 +2,14 @@ import datetime
 import time
 import zmq
 import os
+import hashlib
 
 i=1
+def calc_file_hash(path):
+    f = open(path, 'rb')
+    data = f.read()
+    hash = hashlib.md5(data).hexdigest()
+    return hash
 
 # Logging Function
 def logging(transfer_status):
@@ -33,9 +39,12 @@ while True:
     # Check if file exists
     if os.path.isfile(destfile):
         transfer_status = 'success'
+        hash_val = calc_file_hash(destfile)
+        logging('file :' + ' ' + str(filename)+ ' ' + 'md5 Checksum :' + ' ' + str(hash_val) + ' ' + 'Get file from Sender, success')
         time.sleep(2)
     elif not os.path.isfile(destfile):
         transfer_status = 'fail'
+        logging('file :' + ' ' + str(filename)+ ' ' + str(hash_val) + ' ' + 'Get file from Sender, fail')
         time.sleep(2)
     # If file exists, send it to receiver and logging to "transfer.log"
     if transfer_status == 'success':
@@ -48,9 +57,9 @@ while True:
         file = target.read(size)
         if file:
             publisher.send(file)
-        logging('file'+' '+str(destfile)+' '+'Send to Receiver, success')
+        logging('file :' + ' ' + str(filename)+ ' ' + 'md5 Checksum :' + ' ' + str(hash_val) + ' ' + 'Send file to Receiver, success')
         file=target.close()
         os.remove(destfile)
     # If file doesn't exist, logging to "transfer.log"
     elif transfer_status == 'fail':
-        logging('file'+' '+str(destfile)+' '+'Send to Receiver, fail')
+        logging('file :' + ' ' + str(filename)+ ' ' + str(hash_val) + ' ' + 'Send file to Receiver, fail')
