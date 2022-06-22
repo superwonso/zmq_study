@@ -58,3 +58,4 @@ dkms.conf
 
 # Log file
 python/1vsNvs1_file_transfer_n_logging/transfer.log
+.vscode/c_cpp_properties.json

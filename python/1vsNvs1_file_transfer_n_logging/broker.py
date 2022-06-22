@@ -6,6 +6,7 @@ import hashlib
 
 i=1
 
+# Calculate md5 checksum 'path' file
 def calc_file_hash(path):
     f = open(path, 'rb')
     data = f.read()
@@ -47,7 +48,7 @@ while True:
         time.sleep(1)
     elif not os.path.isfile(destfile):
         transfer_status = 'fail'
-        logging('Broker :' + ' '  + 'file :' + ' ' + str(filename)+ ' ' + str(hash_val) + ' ' + 'Get file from Sender, fail')
+        logging('Broker :' + ' '  + 'file :' + ' ' + str(filename) + 'Get file from Sender, fail')
         time.sleep(1)
     # If file exists, send it to receiver and logging to "transfer.log"
     if transfer_status == 'success':
@@ -65,4 +66,4 @@ while True:
         os.remove(destfile)
     # If file doesn't exist, logging to "transfer.log"
     elif transfer_status == 'fail':
-        logging('Broker :' + ' ' + 'file :' + ' ' + str(filename)+ ' ' + str(hash_val) + ' ' + 'Send file to Receiver, fail')
+        logging('Broker :' + ' ' + 'file :' + ' ' + str(filename) + ' ' + 'Send file to Receiver, fail')
