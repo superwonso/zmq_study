@@ -17,15 +17,15 @@ def file_delete(file_info):
     os.remove(file_info)
     logging('Receiver :' + ' ' + 'file :' + ' ' + str(file_info) + ' ' + 'delete success')
 
-def file_move(file_name, src, dst):
-    shutil.move(src + file_name, dst + file_name)
-    logging('Receiver :' + ' ' + 'file :' + ' ' + str(file_name) + ' ' + 'move to :' + ' ' + str(dst) + ' ' + 'success')
+def file_move(filename, src, dst):
+    shutil.move(src + filename, dst + filename)
+    logging('Receiver :' + ' ' + 'file :' + ' ' + str(filename) + ' ' + 'move to :' + ' ' + str(dst) + ' ' + 'success')
 
-def receive_file(file_name):
+def receive_file(filename):
     # Targeting dir for receive file
     path = './dst'
-    file_name = input('What is the file name?\n')
-    destfile = path + '/' + file_name
+    filename = input('What is the file name?\n')
+    destfile = path + '/' + filename
     # Connect to broker and receive file
     context = zmq.Context()
     subscriber = context.socket(zmq.SUB)
@@ -39,7 +39,7 @@ def receive_file(file_name):
         print('close\n')
         file.close()
         print('Logging')
-        logging('Receiver :' + ' ' + 'file :' + ' ' + str(file_name) + ' ' + 'received success')
+        logging('Receiver :' + ' ' + 'file :' + ' ' + str(filename) + ' ' + 'received success')
     time.sleep(5)
 
 def init(doing):
@@ -57,10 +57,10 @@ def init(doing):
         file_delete(file_info)
         init(doing)
     elif doing == '4':
-        file_name = input('What file do you want to move?\n')
+        filename = input('What file do you want to move?\n')
         src = input('What is the source directory?\n')
         dst = input('What is the destination directory?\n')
-        file_move(file_name, src, dst)
+        file_move(filename, src, dst)
         init(doing)
 
 init()
