@@ -43,24 +43,33 @@ def receive_file(filename):
     time.sleep(5)
 
 def init(doing):
-    doing = input('What do you want to do?\n1. Receive file\n2. Rename file\n3. Delete file\n4. Move file\n')
-    if doing == '1':
-        receive_file()
-        init(doing)
-    elif doing == '2':
-        old_name = input('What file do you want to rename?\n')
-        new_name = input('What is the new name?\n')
-        file_rename(old_name, new_name)
-        init(doing)
-    elif doing == '3':
-        file_info = input('What file do you want to delete?\n')
-        file_delete(file_info)
-        init(doing)
-    elif doing == '4':
-        filename = input('What file do you want to move?\n')
-        src = input('What is the source directory?\n')
-        dst = input('What is the destination directory?\n')
-        file_move(filename, src, dst)
-        init(doing)
+    if doing == '0':
+        doing = input('What do you want to do?\n1. Receive file\n2. Rename file\n3. Delete file\n4. Move file\n5. Exit\n')
+        if doing == '1':
+            receive_file()
+            doing == '0'
+            init(doing)
+        elif doing == '2':
+            old_name = input('What file do you want to rename?\n')
+            new_name = input('What is the new name?\n')
+            file_rename(old_name, new_name)
+            doing == '0'
+            init(doing)
+        elif doing == '3':
+            file_info = input('What file do you want to delete?\n')
+            file_delete(file_info)
+            doing == '0'
+            init(doing)
+        elif doing == '4':
+            filename = input('What file do you want to move?\n')
+            src = input('What is the source directory?\n')
+            dst = input('What is the destination directory?\n')
+            file_move(filename, src, dst)
+            doing == '0'
+            init(doing)
+        elif doing == '5':
+            print('Bye')
+            exit()
 
+doing = 0
 init()
