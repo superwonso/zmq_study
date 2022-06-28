@@ -65,16 +65,21 @@ def Run_broker():
     elif transfer_status == 'fail':
         logging('Broker :' + ' ' + 'file :' + ' ' + str(filename) + ' ' + 'Send file to Receiver, fail')
 
-def init(doing):
-    if doing == '0' : 
-        doing = input('What do you want to do?\n1. Run Broker\n2. Exit\n')
-        if doing == '1':
+def init():
+    prompt = """
+    1. Run Broker
+    2. Exit
+    Enter number : """
+    number = 0
+    print(prompt)
+    number = int(input())
+    while True:
+        if number == 1:
             Run_broker()
-            doing == '0'
-            init(doing)
-        elif doing == '2':
+            number = 0
+            init()
+        elif number == 2:
             print('Exit')
             exit()
 
-doing = 0
-init(doing)
+init()

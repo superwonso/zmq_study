@@ -24,16 +24,21 @@ def Run_sender():
     # Take a break for re-send file
     time.sleep(1)
 
-def init(doing):
-    if doing == '0' : 
-        doing = input('What do you want to do?\n1. Run Sender\n2. Exit\n')
-        if doing == '1':
+def init():
+    prompt = """
+    1. Run Sender
+    2. Exit
+    Enter number : """
+    number = 0
+    print(prompt)
+    number = int(input())
+    while True:
+        if number == 1:
             Run_sender()
-            doing == '0'
-            init(doing)
-        elif doing == '2':
+            number = 0
+            init()
+        elif number == 2:
             print('Exit')
             exit()
 
-doing = 0
-init(doing)
+init()

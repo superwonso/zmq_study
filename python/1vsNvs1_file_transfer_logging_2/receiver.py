@@ -42,34 +42,38 @@ def receive_file(filename):
         logging('Receiver :' + ' ' + 'file :' + ' ' + str(filename) + ' ' + 'received success')
     time.sleep(5)
 
-def init(doing):
-    if doing == '0':
-        doing = input('What do you want to do?\n1. Receive file\n2. Rename file\n3. Delete file\n4. Move file\n5. Exit\n')
-        if doing == '1':
-            receive_file()
-            doing == '0'
-            init(doing)
-        elif doing == '2':
-            old_name = input('What file do you want to rename?\n')
-            new_name = input('What is the new name?\n')
+def init():
+    prompt = """
+        1. Receive file
+        2. Rename file
+        3. Delete file
+        4. Move file
+        5. Exit
+        Enter number : 
+        """
+    while True:
+        number = 0
+        print(prompt)
+        number = input()
+        if number == '1':
+            receive_file(filename)
+        elif number == '2':
+            old_name = input('What is the old file name?\n')
+            new_name = input('What is the new file name?\n')
             file_rename(old_name, new_name)
-            doing == '0'
-            init(doing)
-        elif doing == '3':
-            file_info = input('What file do you want to delete?\n')
+        elif number == '3':
+            file_info = input('What is the file name?\n')
             file_delete(file_info)
-            doing == '0'
-            init(doing)
-        elif doing == '4':
-            filename = input('What file do you want to move?\n')
+        elif number == '4':
+            filename = input('What is the file name?\n')
             src = input('What is the source directory?\n')
             dst = input('What is the destination directory?\n')
             file_move(filename, src, dst)
-            doing == '0'
-            init(doing)
-        elif doing == '5':
-            print('Bye')
+        elif number == '5':
+            print('Exit')
             exit()
+        else:
+            print('Invalid input')
+            continue
 
-doing = 0
 init()
